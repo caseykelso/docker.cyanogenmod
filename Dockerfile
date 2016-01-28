@@ -7,3 +7,5 @@ RUN wget -O ~/bin/repo https://storage.googleapis.com/git-repo-downloads/repo
 RUN chmod a+x ~/bin/repo
 RUN PATH=~/bin:$PATH
 RUN echo 'export PATH=~/bin:$PATH' >> ~/.bashrc
+RUN echo 'export USER=$(whoami)' >> ~/.bashrc
+
